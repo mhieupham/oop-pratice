@@ -1,13 +1,15 @@
 <?php
 require 'includes/NewClass.inc.php';
-$obj = new NewClass();
-var_dump($obj);
+require 'includes/Person.inc.php';
 ?>
 <html>
 <head>
 
 </head>
 <body>
-
+<?php
+ $obj = new Pet;
+ var_dump($obj->owner());
+?>
 </body>
 </html>
