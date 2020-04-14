@@ -1,14 +1,19 @@
 <?php
 class Person
 {
-    public $first = 'daniel';
-    private $last = 'nielsen';
-    private $age = '27';
-}
-class Pet extends Person
-{
-    public function owner(){
-        $a=$this->first;
-        return $a;
+    public $name;
+    public $age;
+    public $eyeColor;
+
+    public function setName($name,$eyeColor,$age)
+    {
+        $this->name = $name;
+        $this->eyeColor = $eyeColor;
+        $this->age = $age;
+        return [
+            'name'=>$this->name,
+            'age'=>$this->age,
+            'eyeColor'=>$this->eyeColor
+        ];
     }
 }
