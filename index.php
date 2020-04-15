@@ -1,6 +1,5 @@
 <?php
 require 'includes/NewClass.inc.php';
-require 'includes/Person.inc.php';
 ?>
 <html>
 <head>
@@ -8,8 +7,10 @@ require 'includes/Person.inc.php';
 </head>
 <body>
 <?php
- $obj = new Pet;
- var_dump($obj->owner());
+ $obj = new NewClass;
+ unset($obj);
+ $obj->setNewProperty('ditme properti');
+ var_dump($obj->getProperty());
 ?>
 </body>
 </html>
