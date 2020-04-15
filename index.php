@@ -1,6 +1,6 @@
 <?php
-require 'includes/NewClass.inc.php';
-require 'includes/Person.inc.php';
+require 'includes/autoload.inc.php';
+use Person\Person;
 ?>
 <html>
 <head>
@@ -8,8 +8,11 @@ require 'includes/Person.inc.php';
 </head>
 <body>
 <?php
- $obj = new Pet;
- var_dump($obj->owner());
+ $house1 = new House();
+ $house1->themThongTin('ha noi','32','hieu');
+ $person = new Person();
+ echo $person->first;
+
 ?>
 </body>
 </html>

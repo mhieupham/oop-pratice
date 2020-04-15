@@ -1,4 +1,6 @@
 <?php
+namespace Person;
+
 class Person
 {
     public $first = 'daniel';
