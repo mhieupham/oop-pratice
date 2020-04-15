@@ -11,14 +11,12 @@ class Person
         $this->eye=$eye;
         $this->age=$age;
     }
-
     public function setName($name)
     {
         $this->name = $name;
     }
     public function getName()
     {
-        // TODO: Implement __destruct() method.
         return $this->name;
     }
 }
