@@ -1,14 +1,25 @@
 <?php
 class Person
 {
-    public $first = 'daniel';
-    private $last = 'nielsen';
-    private $age = '27';
-}
-class Pet extends Person
-{
-    public function owner(){
-        $a=$this->first;
-        return $a;
+    private $name;
+    private $eye;
+    private $age;
+
+    public function __construct($name,$eye,$age)
+    {
+        $this->name=$name;
+        $this->eye=$eye;
+        $this->age=$age;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+    public function getName()
+    {
+        // TODO: Implement __destruct() method.
+        return $this->name;
     }
 }
+
