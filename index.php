@@ -1,5 +1,4 @@
 <?php
-require 'includes/NewClass.inc.php';
 require 'includes/Person.inc.php';
 ?>
 <html>
@@ -8,8 +7,10 @@ require 'includes/Person.inc.php';
 </head>
 <body>
 <?php
- $obj = new Pet;
- var_dump($obj->owner());
+//Person::setDrinkingAge('15');
+//echo Person::$drinkingAge;
+$person = new Person;
+echo $person->getAge();
 ?>
 </body>
 </html>

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67f301c3-e51f-4df1-a95e-b14108a17217" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/NewClass.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/Person.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Person.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,6 +51,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586835235838</updated>
       <workItem from="1586835237258" duration="2438000" />
+      <workItem from="1586923638428" duration="2687000" />
+      <workItem from="1586936037264" duration="274000" />
     </task>
     <servers />
   </component>
@@ -61,7 +64,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
