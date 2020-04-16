@@ -1,6 +1,6 @@
 <?php
-require 'includes/NewClass.inc.php';
-require 'includes/Person.inc.php';
+declare(strict_types=1);
+require 'includes/autoload.inc.php';
 ?>
 <html>
 <head>
@@ -8,8 +8,14 @@ require 'includes/Person.inc.php';
 </head>
 <body>
 <?php
- $obj = new Pet;
- var_dump($obj->owner());
+ $obj = new Person();
+ try{
+     $obj->setName(123);
+     echo $obj->getName();
+ }catch (TypeError $exception){
+     echo $exception->getMessage();
+ }
+
 ?>
 </body>
 </html>
