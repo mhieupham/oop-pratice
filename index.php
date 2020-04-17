@@ -1,6 +1,5 @@
 <?php
-require 'includes/NewClass.inc.php';
-require 'includes/Person.inc.php';
+require 'includes/FirstClass.inc.php';
 ?>
 <html>
 <head>
@@ -8,8 +7,10 @@ require 'includes/Person.inc.php';
 </head>
 <body>
 <?php
- $obj = new Pet;
- var_dump($obj->owner());
+//$class = new SecondClass();
+SecondClass::setStaticProper('1234');
+$a = SecondClass::getStaticProperty();
+echo $a;
 ?>
 </body>
 </html>
